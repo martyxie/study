@@ -7,6 +7,7 @@ class box
 	public:
 		int get_box_soc(void);
 		void set_box_soc(int len,int with,int higth);
+		friend void get_test(box *x);
 		box();
 		~box();
 	private:
@@ -14,11 +15,12 @@ class box
 	int with;
 	int higth;
 };
-
+//构造函数,在一个类创建时调用,该函数可以对类成员做一些初始化
 box::box(void)
 {
 	cout << "create box" << endl;
 }
+//析构函数,删除一个对象时调用,一般是释放资源
 box::~box(void)
 {
 	cout << "delete box" << endl;
@@ -56,6 +58,13 @@ int nbox::get_box_soc(void)
 {
 	return mac ;
 }
+// 友元函数/类，不属于类的成员，但可以访问类的所有成员
+void get_test(box *p)
+{
+	cout << p->length << endl;
+	cout << p->with << endl;
+	cout << p->higth << endl;
+}
 
 int main(void)
 {
@@ -65,6 +74,7 @@ int main(void)
 	{
 		pbox->set_box_soc(10,4,5);
 		cout << pbox->get_box_soc()<<endl;
+		get_test(pbox);
 		delete pbox;
 	}
 	newbox.set_box_soc(10,6,9);
