@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+IS_ALPHA	swjson.c	9;"	d	file:
+IS_CTRL	swjson.c	10;"	d	file:
+base64decode	base64.c	/^int base64decode(unsigned char *input, int input_length, char *output, int output_length)$/;"	f
+base64encode	base64.c	/^int base64encode(char *input, int input_length, char *output, int output_length)$/;"	f
+basis_64	base64.c	/^static unsigned char basis_64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+buf_alloc	swjson.c	/^static void* buf_alloc( int size, char* buf, int* mem_tail )$/;"	f	file:
+buf_strdup	swjson.c	/^static char* buf_strdup( const char* str, int len, char* buf, int* mem_tail )$/;"	f	file:
+char64	base64.c	102;"	d	file:
+decode_array	swjson.c	/^static int decode_array(const char* str, int len, json_array_t** pjarr, char* buf, int* mem_tail)$/;"	f	file:
+decode_object	swjson.c	/^static int decode_object(const char* str, int len, json_object_t** pjobj, char* buf, int* mem_tail)$/;"	f	file:
+decode_value	swjson.c	/^static int decode_value( const char* str, int len, sw_json_t* pvalue, char* buf, int* mem_tail )$/;"	f	file:
+get_json_length	swjson.c	/^static int get_json_length( const char* str, int length )$/;"	f	file:
+get_string_length	swjson.c	/^static int get_string_length( const char* str, int length )$/;"	f	file:
+index_64	base64.c	/^static unsigned char index_64[128] = {$/;"	v	file:
+m_level_info	swlog.c	/^static char *m_level_info[] = {"ALL","DEBUG","ERROR"};$/;"	v	file:
+m_local_endian_mode	swcommon.c	/^static int m_local_endian_mode = UNKNOW_ENDIAN; \/\/当前设备端$/;"	v	file:
+m_log_level	swlog.c	/^static int m_log_level = LOG_LEVEL_ERROR;$/;"	v	file:
+m_other_endian_mode	swcommon.c	/^static int m_other_endian_mode = UNKNOW_ENDIAN; \/\/对端设备$/;"	v	file:
+main	swplugc.c	/^int main(int argc, char *argv[])$/;"	f
+main	swplugs.c	/^int main(int argc, char *argv[])$/;"	f
+sw_bind_socket	swsocket.c	/^int sw_bind_socket(int socketfd, char *ipadress, int port )$/;"	f
+sw_common_init	swcommon.c	/^void sw_common_init(endian_t mode)$/;"	f
+sw_connect_socket	swsocket.c	/^int sw_connect_socket(int socketfd, char *ipadress, int port )$/;"	f
+sw_create_socket	swsocket.c	/^int sw_create_socket( int af, int type, int protocol )$/;"	f
+sw_destroy_socket	swsocket.c	/^void sw_destroy_socket(int socketfd)$/;"	f
+sw_get_endian_type	swcommon.c	/^int sw_get_endian_type(void)$/;"	f
+sw_json_decode	swjson.c	/^sw_json_t* sw_json_decode( const char* str, int length, void* buf, int size )$/;"	f
+sw_log_init	swlog.c	/^void  sw_log_init(int log_level)$/;"	f
+sw_log_out	swlog.c	/^void sw_log_out( int log_level,const char *file,int line,const char* format, ... )$/;"	f
+sw_swapint16_value	swcommon.c	/^uint16_t sw_swapint16_value(uint16_t value)$/;"	f
+sw_swapint32_value	swcommon.c	/^uint32_t sw_swapint32_value(uint32_t value)$/;"	f
