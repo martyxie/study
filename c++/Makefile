@@ -1,3 +1,3 @@
 
 all:
-	g++ class.cpp -o test
+	g++ boxclass.cpp -o test
